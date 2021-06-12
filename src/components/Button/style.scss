@@ -1,0 +1,145 @@
+$color: #a5a5a7;
+$active-color: #697077;
+
+//Default button
+$def-button-bg: linear-gradient(144.05deg, #32383e -69.07%, #17191c 122.22%);
+$def-button-box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.08), 4px 4px 18px rgba(0, 0, 0, 0.5);
+
+$def-button-bg-active: linear-gradient(303.77deg, #2c333a -71.57%, #1c1e22 59.28%, #121416 59.28%);
+$def-button-box-shadow-active: inset -2px -2px 10px rgba(255, 255, 255, 0.05), inset 2px 3px 10px #070709;
+
+//CURVER BUTTON
+$curved-button-default-bg: linear-gradient(327.43deg, #32383e -77.68%, #17191c 87.35%);
+$curved-button-default-box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.05), 4px 4px 18px rgba(0, 0, 0, 0.4);
+
+//CURVRED BUTTON ACTIVE BG
+$curved-active-bg-border: linear-gradient(135.41deg, rgba(200, 213, 225, 0.36) -21.71%, rgba(0, 0, 0, 0) 151.22%),
+    radial-gradient(90.83% 90.83% at 100% 90.83%, rgba(0, 0, 0, 0.3) 0%, rgba(11, 32, 51, 0) 91.97%),
+    radial-gradient(110.83% 110.83% at -10% -46.67%, rgba(243, 112, 17, 0.3) 17.02%, rgba(243, 110, 14, 0) 91.97%);
+
+//CURVED &__bg
+$curved-button-bg-active: linear-gradient(303.77deg, #2c333a -127.57%, #1c1e227a 55.28%, #12141669 22.28%);
+$curverd-button-box-shadow-active: inset -2px -2px 12px rgba(255, 255, 255, 0.06), inset 2px 3px 16px rgba(7, 7, 9, 0.8);
+
+//Soft button
+$soft-button-bg: linear-gradient(146.19deg, #23272b -6.95%, #17191c 91.44%);
+$soft-button-shadow: -4px -4px 16px rgba(195, 200, 205, 0.06), 4px 4px 18px rgba(0, 0, 0, 0.6);
+
+.dark-button {
+    position: relative;
+    padding: 0.625em 0.85em;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color;
+    border-radius: 1em;
+
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    background: none;
+
+    //Default styles
+    &:active {
+        background: $curved-active-bg-border;
+
+        color: $active-color;
+
+        .dark-button {
+            &__bg {
+                background: $def-button-bg-active;
+                box-shadow: $def-button-box-shadow-active;
+                filter: blur(2px);
+            }
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        bottom: 1px;
+        top: 1px;
+        border-radius: 1em;
+        background: $def-button-bg;
+        box-shadow: $def-button-box-shadow;
+
+        &-holder {
+            position: absolute;
+            left: 1px;
+            right: 1px;
+            bottom: 1px;
+            top: 1px;
+            border-radius: 1em;
+            background: #1d1f23;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    //Curved style
+    &--curved {
+        &:active {
+            &.dark-button {
+                background: $curved-active-bg-border;
+            }
+
+            .dark-button {
+                &__bg {
+                    background: $curved-button-bg-active;
+                    box-shadow: $curverd-button-box-shadow-active;
+                    filter: blur(2px);
+                }
+            }
+        }
+
+        .dark-button {
+            &__bg {
+                background: $curved-button-default-bg;
+                box-shadow: $curved-button-default-box-shadow;
+            }
+        }
+    }
+
+    //Soft styl
+    &--soft {
+        background: transparent;
+
+        &:active {
+            background: transparent;
+        }
+
+        .dark-button {
+            &__bg {
+                background: $soft-button-bg;
+                box-shadow: $soft-button-shadow;
+                filter: blur(4px);
+            }
+
+            &:active {
+                .dark-button {
+                    &__bg {
+                        background: linear-gradient(327.43deg, #32383e -77.68%, #17191c 87.35%);
+                        box-shadow: -4px -2px 16px rgba(195, 200, 205, 0.07), 4px 4px 18px rgba(0, 0, 0, 0.44);
+                        filter: blur(2px);
+                    }
+                }
+            }
+        }
+    }
+
+    &--circle {
+        border-radius: 50%;
+        .dark-button {
+            border-radius: 50%;
+            &__bg {
+                border-radius: 50%;
+
+                &-holder {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
