@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/neumorphic-ui-kit-simple/static/css/main.f0cc5a7e.chunk.css",
+    "main.js": "/neumorphic-ui-kit-simple/static/js/main.ba8e0771.chunk.js",
+    "main.js.map": "/neumorphic-ui-kit-simple/static/js/main.ba8e0771.chunk.js.map",
+    "runtime-main.js": "/neumorphic-ui-kit-simple/static/js/runtime-main.2709b4b1.js",
+    "runtime-main.js.map": "/neumorphic-ui-kit-simple/static/js/runtime-main.2709b4b1.js.map",
+    "static/css/2.30047094.chunk.css": "/neumorphic-ui-kit-simple/static/css/2.30047094.chunk.css",
+    "static/js/2.0dbeb385.chunk.js": "/neumorphic-ui-kit-simple/static/js/2.0dbeb385.chunk.js",
+    "static/js/2.0dbeb385.chunk.js.map": "/neumorphic-ui-kit-simple/static/js/2.0dbeb385.chunk.js.map",
+    "index.html": "/neumorphic-ui-kit-simple/index.html",
+    "static/css/2.30047094.chunk.css.map": "/neumorphic-ui-kit-simple/static/css/2.30047094.chunk.css.map",
+    "static/css/main.f0cc5a7e.chunk.css.map": "/neumorphic-ui-kit-simple/static/css/main.f0cc5a7e.chunk.css.map",
+    "static/js/2.0dbeb385.chunk.js.LICENSE.txt": "/neumorphic-ui-kit-simple/static/js/2.0dbeb385.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2709b4b1.js",
+    "static/css/2.30047094.chunk.css",
+    "static/js/2.0dbeb385.chunk.js",
+    "static/css/main.f0cc5a7e.chunk.css",
+    "static/js/main.ba8e0771.chunk.js"
+  ]
+}
